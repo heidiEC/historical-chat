@@ -36,6 +36,48 @@ const characters = [
     name: 'Stephen Hawking',
     title: 'Theoretical Physicist',
     image: '/images/hawking.jpg'
+  },
+  {
+    id: 7,
+    name: 'Marie Curie',
+    title: 'Pioneer in Radioactivity',
+    image: '/images/curie.jpg'
+  },
+  {
+    id: 8,
+    name: 'Albert Einstein',
+    title: 'Theoretical Physicist',
+    image: '/images/einstein.jpg'
+  },
+  {
+    id: 9,
+    name: 'Mahatma Gandhi',
+    title: 'Non-violent Freedom Fighter',
+    image: '/images/gandhi.jpg'
+  },
+  {
+    id: 10,
+    name: 'Nikola Tesla',
+    title: 'Electrical Engineering Genius',
+    image: '/images/tesla.jpg'
+  },
+  {
+    id: 11,
+    name: 'Maya Angelou',
+    title: 'Poet and Civil Rights Activist',
+    image: '/images/angelou.jpg'
+  },
+  {
+    id: 12,
+    name: 'Carl Sagan',
+    title: 'Astronomer and Science Communicator',
+    image: '/images/sagan.jpg'
+  },
+  {
+    id: 13,
+    name: 'Princess Diana',
+    title: 'Humanitarian & People\'s Princess',
+    image: '/images/diana.jpg'
   }
 ];
 
