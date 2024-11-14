@@ -23,10 +23,12 @@ export async function generateResponse(character, messageHistory) {
       body: JSON.stringify({
         inputs: fullPrompt,
         parameters: {
-          max_new_tokens: 200,
+          max_new_tokens: 500,
           temperature: 0.7,
           top_p: 0.95,
           do_sample: true,
+          stop: ["\nHuman:", "\n\n"],
+          return_full_text: false
         }
       }),
     });
@@ -36,7 +38,17 @@ export async function generateResponse(character, messageHistory) {
     }
 
     const data = await response.json();
-    return data[0].generated_text.split(`${character.name}:`).pop().trim();
+    let generatedText = data[0].generated_text;
+    
+    // Clean up the response
+    generatedText = generatedText
+      .split(`${character.name}:`).pop()
+      .trim()
+      .replace(/\n+/g, '\n')
+      .replace(/Human:/g, '')
+      .trim();
+
+    return generatedText;
   } catch (error) {
     console.error('Error calling Hugging Face API:', error);
     throw error;
@@ -65,4 +77,4 @@ function getCharacterPrompt(character) {
   };
 
   return prompts[character.name] || 'Respond as the historical figure being portrayed.';
-} 
+}
