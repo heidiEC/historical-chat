@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/historical-chat/static/css/main.ecc0b587.css",
+    "main.js": "/historical-chat/static/js/main.7cdbb976.js",
+    "index.html": "/historical-chat/index.html",
+    "main.ecc0b587.css.map": "/historical-chat/static/css/main.ecc0b587.css.map",
+    "main.7cdbb976.js.map": "/historical-chat/static/js/main.7cdbb976.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ecc0b587.css",
+    "static/js/main.7cdbb976.js"
+  ]
+}
