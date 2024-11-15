@@ -6,55 +6,31 @@ const path = require('path');
 const images = [
   {
     name: 'franklin.jpg',
-    url: 'https://upload.wikimedia.org/wikipedia/commons/8/87/Joseph_Siffred_Duplessis_-_Benjamin_Franklin_-_Google_Art_Project.jpg'
-  },
-  {
-    name: 'mlk.jpg',
-    url: 'https://upload.wikimedia.org/wikipedia/commons/0/05/Martin_Luther_King%2C_Jr..jpg'
+    url: 'https://upload.wikimedia.org/wikipedia/commons/2/25/Benjamin_Franklin_by_Joseph_Duplessis_1778.jpg'
   },
   {
     name: 'jobs.jpg',
-    url: 'https://upload.wikimedia.org/wikipedia/commons/f/f5/Steve_Jobs_Headshot_2010-CROP2.jpg'
-  },
-  {
-    name: 'davinci.jpg',
-    url: 'https://upload.wikimedia.org/wikipedia/commons/b/ba/Leonardo_self.jpg'
+    url: 'https://upload.wikimedia.org/wikipedia/commons/d/dc/Steve_Jobs_Headshot_2010-CROP_%28cropped_2%29.jpg'
   },
   {
     name: 'krishnamurti.jpg',
-    url: 'https://upload.wikimedia.org/wikipedia/commons/7/7b/Jiddu_Krishnamurti_01.jpg'
-  },
-  {
-    name: 'hawking.jpg',
-    url: 'https://upload.wikimedia.org/wikipedia/commons/e/eb/Stephen_Hawking.StarChild.jpg'
-  },
-  {
-    name: 'curie.jpg',
-    url: 'https://upload.wikimedia.org/wikipedia/commons/7/7e/Marie_Curie_c1920.jpg'
-  },
-  {
-    name: 'einstein.jpg',
-    url: 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Einstein_1921_by_F_Schmutzer_-_restoration.jpg'
+    url: 'https://upload.wikimedia.org/wikipedia/commons/4/4e/Jiddu_Krishnamurti_in_1929.jpg'
   },
   {
     name: 'gandhi.jpg',
-    url: 'https://upload.wikimedia.org/wikipedia/commons/7/7a/Mahatma-Gandhi%2C_studio%2C_1931.jpg'
-  },
-  {
-    name: 'tesla.jpg',
-    url: 'https://upload.wikimedia.org/wikipedia/commons/7/79/Tesla_circa_1890.jpeg'
+    url: 'https://upload.wikimedia.org/wikipedia/commons/d/d1/Portrait_Gandhi.jpg'
   },
   {
     name: 'angelou.jpg',
-    url: 'https://upload.wikimedia.org/wikipedia/commons/8/8b/Maya_Angelou_visits_YCP.jpg'
+    url: 'https://upload.wikimedia.org/wikipedia/commons/6/6f/Maya_Angelou_in_1971.jpg'
   },
   {
     name: 'sagan.jpg',
     url: 'https://upload.wikimedia.org/wikipedia/commons/b/be/Carl_Sagan_Planetary_Society.jpg'
   },
   {
-    name: 'diana.jpg',
-    url: 'https://upload.wikimedia.org/wikipedia/commons/5/5e/Diana%2C_Princess_of_Wales_1997_%282%29.jpg'
+    name: 'curie.jpg',
+    url: 'https://upload.wikimedia.org/wikipedia/commons/3/36/Marie_Curie_%281900%29.jpg'
   }
 ];
 
