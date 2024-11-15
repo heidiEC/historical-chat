@@ -112,4 +112,4 @@ function CharacterSelect({ onSelectCharacter }) {
   );
 }
 
-export default CharacterSelect; 
+export default CharacterSelect;
