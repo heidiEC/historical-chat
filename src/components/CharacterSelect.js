@@ -12,6 +12,9 @@ import teslaImg from '../images/tesla.jpg';
 import angelouImg from '../images/angelou.jpg';
 import saganImg from '../images/sagan.jpg';
 import dianaImg from '../images/diana.jpg';
+import cortazarImg from '../images/cortazar.jpg';
+import bolanoImg from '../images/bolano.jpg';
+import marquezImg from '../images/marquez.jpg';
 
 const characters = [
   {
@@ -91,6 +94,24 @@ const characters = [
     name: 'Princess Diana',
     title: 'Humanitarian & People\'s Princess',
     image: dianaImg
+  },
+  {
+    id: 14,
+    name: 'Julio Cortázar',
+    title: 'Avant-Garde Author',
+    image: cortazarImg
+  },
+  {
+    id: 15,
+    name: 'Roberto Bolaño',
+    title: 'Literary Revolutionary',
+    image: bolanoImg
+  },
+  {
+    id: 16,
+    name: 'Gabriel García Márquez',
+    title: 'Master of Magical Realism',
+    image: marquezImg
   }
 ];
 
