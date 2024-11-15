@@ -1,85 +1,96 @@
 import React from 'react';
-
-const BASE_URL = 'https://heidiec.github.io/historical-chat';
+import franklinImg from '../images/franklin.jpg';
+import mlkImg from '../images/mlk.jpg';
+import jobsImg from '../images/jobs.jpg';
+import davinciImg from '../images/davinci.jpg';
+import krishnamurtiImg from '../images/krishnamurti.jpg';
+import hawkingImg from '../images/hawking.jpg';
+import curieImg from '../images/curie.jpg';
+import einsteinImg from '../images/einstein.jpg';
+import gandhiImg from '../images/gandhi.jpg';
+import teslaImg from '../images/tesla.jpg';
+import angelouImg from '../images/angelou.jpg';
+import saganImg from '../images/sagan.jpg';
+import dianaImg from '../images/diana.jpg';
 
 const characters = [
   {
     id: 1,
     name: 'Benjamin Franklin',
     title: 'Founding Father & Polymath',
-    image: './images/franklin.jpg'
+    image: franklinImg
   },
   {
     id: 2,
     name: 'Martin Luther King Jr',
     title: 'Civil Rights Leader',
-    image: './images/mlk.jpg'
+    image: mlkImg
   },
   {
     id: 3,
     name: 'Steve Jobs',
     title: 'Tech Visionary',
-    image: './images/jobs.jpg'
+    image: jobsImg
   },
   {
     id: 4,
     name: 'Leonardo DaVinci',
     title: 'Renaissance Polymath',
-    image: './images/davinci.jpg'
+    image: davinciImg
   },
   {
     id: 5,
     name: 'J Krishnamurti',
     title: 'Philosophical Teacher',
-    image: './images/krishnamurti.jpg'
+    image: krishnamurtiImg
   },
   {
     id: 6,
     name: 'Stephen Hawking',
     title: 'Theoretical Physicist',
-    image: './images/hawking.jpg'
+    image: hawkingImg
   },
   {
     id: 7,
     name: 'Marie Curie',
     title: 'Pioneer in Radioactivity',
-    image: './images/curie.jpg'
+    image: curieImg
   },
   {
     id: 8,
     name: 'Albert Einstein',
     title: 'Theoretical Physicist',
-    image: './images/einstein.jpg'
+    image: einsteinImg
   },
   {
     id: 9,
     name: 'Mahatma Gandhi',
     title: 'Non-violent Freedom Fighter',
-    image: './images/gandhi.jpg'
+    image: gandhiImg
   },
   {
     id: 10,
     name: 'Nikola Tesla',
     title: 'Electrical Engineering Genius',
-    image: './images/tesla.jpg'
+    image: teslaImg
   },
   {
     id: 11,
     name: 'Maya Angelou',
     title: 'Poet and Civil Rights Activist',
-    image: './images/angelou.jpg'
+    image: angelouImg
   },
   {
     id: 12,
     name: 'Carl Sagan',
     title: 'Astronomer and Science Communicator',
-    image: './images/sagan.jpg'
+    image: saganImg
   },
   {
     id: 13,
     name: 'Princess Diana',
     title: 'Humanitarian & People\'s Princess',
-    image: './images/diana.jpg'
+    image: dianaImg
   }
 ];
 
