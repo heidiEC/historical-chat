@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BASE_URL = process.env.PUBLIC_URL;
+const BASE_URL = 'https://heidiec.github.io/historical-chat';
 
 const characters = [
   {
