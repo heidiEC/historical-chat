@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/historical-chat/static/css/main.ecc0b587.css",
-    "main.js": "/historical-chat/static/js/main.b3987690.js",
+    "main.css": "/historical-chat/static/css/main.b4f2116b.css",
+    "main.js": "/historical-chat/static/js/main.4dd23877.js",
     "static/media/hawking.jpg": "/historical-chat/static/media/hawking.414f3b5e574ef93b6adc.jpg",
     "static/media/tesla.jpg": "/historical-chat/static/media/tesla.5b1777bfdc76632d38db.jpg",
     "static/media/cortazar.jpg": "/historical-chat/static/media/cortazar.7bccc26c60b533a5497a.jpg",
@@ -16,14 +16,16 @@
     "static/media/jobs.jpg": "/historical-chat/static/media/jobs.5e550d79903dc5156e3b.jpg",
     "static/media/mlk.jpg": "/historical-chat/static/media/mlk.7fcfb57b796035a18236.jpg",
     "static/media/franklin.jpg": "/historical-chat/static/media/franklin.2533f3c3ece8915aeb40.jpg",
+    "static/media/kahlo.jpg": "/historical-chat/static/media/kahlo.e4e7463352985b728736.jpg",
     "static/media/marquez.jpg": "/historical-chat/static/media/marquez.5b3c802e782132bf0e73.jpg",
     "static/media/curie.jpg": "/historical-chat/static/media/curie.83cf3abc209320697b2a.jpg",
+    "static/media/beauvoir.jpg": "/historical-chat/static/media/beauvoir.e61ec0786d4d9d134006.jpg",
     "index.html": "/historical-chat/index.html",
-    "main.ecc0b587.css.map": "/historical-chat/static/css/main.ecc0b587.css.map",
-    "main.b3987690.js.map": "/historical-chat/static/js/main.b3987690.js.map"
+    "main.b4f2116b.css.map": "/historical-chat/static/css/main.b4f2116b.css.map",
+    "main.4dd23877.js.map": "/historical-chat/static/js/main.4dd23877.js.map"
   },
   "entrypoints": [
-    "static/css/main.ecc0b587.css",
-    "static/js/main.b3987690.js"
+    "static/css/main.b4f2116b.css",
+    "static/js/main.4dd23877.js"
   ]
 }
