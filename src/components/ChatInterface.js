@@ -57,14 +57,14 @@ function ChatInterface({ character, onClose }) {
   }, [messages]); // Scroll when messages update
 
   return (
-    <div className="chat-interface">
-      <div className="chat-header">
-        <button className="close-button" onClick={onClose}>×</button>
-        <img src={character.image} alt={character.name} />
-        <h2>{character.name}</h2>
-      </div>
-
-      <div className="chat-content">
+    <div className="chat-modal-overlay">
+      <div className="chat-interface">
+        <div className="chat-header">
+          <button className="close-button" onClick={onClose}>×</button>
+          <img src={character.image} alt={character.name} />
+          <h2>{character.name}</h2>
+        </div>
+        
         <div className="chat-messages">
           {messages.map((message, index) => (
             <div
@@ -74,24 +74,17 @@ function ChatInterface({ character, onClose }) {
               {message.text}
             </div>
           ))}
-          {isLoading && (
-            <div className="message character">
-              Thinking...
-            </div>
-          )}
-          <div ref={messagesEndRef} /> {/* Scroll anchor */}
         </div>
 
         <div className="chat-input-container">
           <div className="chat-input">
-            <textarea
+            <input
+              type="text"
               value={newMessage}
               onChange={(e) => setNewMessage(e.target.value)}
               onKeyPress={handleKeyPress}
               placeholder="Type your message..."
               disabled={isLoading}
-              rows="1"
-              style={{ resize: 'none' }}
             />
             <button
               onClick={handleSendMessage}
