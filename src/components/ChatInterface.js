@@ -84,13 +84,14 @@ function ChatInterface({ character, onClose }) {
 
         <div className="chat-input-container">
           <div className="chat-input">
-            <input
-              type="text"
+            <textarea
               value={newMessage}
               onChange={(e) => setNewMessage(e.target.value)}
               onKeyPress={handleKeyPress}
               placeholder="Type your message..."
               disabled={isLoading}
+              rows="1"
+              style={{ resize: 'none' }}
             />
             <button
               onClick={handleSendMessage}
