@@ -34,16 +34,10 @@
 }
 
 .chat-header {
-  padding: 1.5rem 1rem 1rem;
-  background: var(--bg-secondary);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+  padding: 1rem;
   border-bottom: 1px solid var(--border);
-  gap: 0.5rem;
-  flex-shrink: 0;
+  text-align: center;
+  position: relative;
 }
 
 .chat-header img {
@@ -160,5 +154,38 @@
   .message {
     padding: 0.5rem 1rem;
   }
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.mode-button {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  min-width: 100px;
+  font-size: 0.9rem;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+
+.mode-button:hover {
+  background: var(--accent);
+}
+
+/* Ensure the chat content area scrolls properly */
+.chat-interface {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
  
