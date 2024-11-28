@@ -39,7 +39,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>The LANE</h1>
+        <h1>Mabel and Dorothy AI</h1>
       </header>
       
       <div className="nav-controls">
