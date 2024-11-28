@@ -39,7 +39,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Historical Chat</h1>
+        <h1>Welcome to the LANE intimate and visionary chats</h1>
       </header>
       
       <div className="nav-controls">
