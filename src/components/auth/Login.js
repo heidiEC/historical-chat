@@ -1,26 +1,31 @@
 import React, { useState } from 'react';
 import { useAuth } from '../../context/AuthContext';
-import './Auth.css';
 
 function Login({ onToggleForm }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
   const { login } = useAuth();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await login(email, password);
+      const authResponse = await fetch('/api/auth', { method: 'POST', body: JSON.stringify({ email, password }) });
+      if (authResponse.ok) {
+        // authentication successful
+        const token = await authResponse.json();
+        dispatch(setToken(token));
+      } else if (authResponse.status === 302) {
+        // Handle the redirect response here
+        console.log('Redirecting to another URL');
+      }
     } catch (err) {
-      setError(err.message);
+      console.error(err);
     }
   };
 
   return (
     <div className="auth-form">
       <h2>Login</h2>
-      {error && <div className="error-message">{error}</div>}
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <input
@@ -52,4 +57,4 @@ function Login({ onToggleForm }) {
   );
 }
 
-export default Login; 
+export default Login;
