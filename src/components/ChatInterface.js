@@ -4,6 +4,8 @@ import { query as generateResponse } from '../services/huggingFaceService';
 import WorksList from './WorksList';
 import './ChatInterface.css';
 
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+
 function ChatInterface({ character, onClose }) {
   const { user } = useAuth();
   const [messages, setMessages] = useState([]);
@@ -15,7 +17,7 @@ function ChatInterface({ character, onClose }) {
 
   const saveChat = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/chats', {
+      const response = await fetch(`${API_URL}/api/chats`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
