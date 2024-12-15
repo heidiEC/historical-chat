@@ -1,8 +1,9 @@
+const path = require('path');
 require('dotenv').config();
-
 const express = require('express');
 const mongoose = require('mongoose');
 const corsMiddleware = require('./middleware/cors');
+const jwt = require('jsonwebtoken');
 
 const app = express();
 
@@ -39,6 +40,13 @@ const router = require('./routes');
 app.use('/api/auth', router.auth);
 app.use('/api/chats', router.chats);
 app.use('/api/users', router.users);
+
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, 'client/build')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname + '/client/build/index.html'));
+});
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
