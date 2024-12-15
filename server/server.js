@@ -2,7 +2,7 @@ const path = require('path');
 require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
-const corsMiddleware = require('./middleware/cors');
+const cors = require('./middleware/cors'); // Updated import
 const jwt = require('jsonwebtoken');
 
 const app = express();
@@ -29,7 +29,7 @@ app.use((req, res, next) => {
 });
 
 // CORS middleware
-app.use(corsMiddleware);
+app.use(cors);
 
 // JSON parsing middleware
 app.use(express.json());
