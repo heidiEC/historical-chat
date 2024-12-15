@@ -20,9 +20,11 @@
     "react-scripts": "^5.0.1",
     "sharp": "^0.33.5"
   },
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
+    "start-backend": "node server.js",
+    "start-frontend": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -48,6 +50,7 @@
     ]
   },
   "devDependencies": {
+    "concurrently": "^7.0.0",
     "gh-pages": "^6.2.0"
   },
   "homepage": "https://heidiEC.github.io/historical-chat"
