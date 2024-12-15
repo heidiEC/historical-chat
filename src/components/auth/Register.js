@@ -12,7 +12,15 @@ function Register({ onToggleForm }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await register(username, email, password);
+const authResponse = await fetch('/api/auth', { method: 'POST', body: JSON.stringify({ email, password }) });
+      if (authResponse.ok) {
+        // registration successful
+        const token = await authResponse.json();
+        dispatch(setToken(token));
+      } else if (authResponse.status === 302) {
+        // Handle the redirect response here
+        console.log('Redirecting to another URL');
+      }
     } catch (err) {
       setError(err.message);
     }
@@ -23,15 +31,6 @@ function Register({ onToggleForm }) {
       <h2>Register</h2>
       {error && <div className="error-message">{error}</div>}
       <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <input
-            type="text"
-            placeholder="Username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            required
-          />
-        </div>
         <div className="form-group">
           <input
             type="email"
@@ -62,4 +61,4 @@ function Register({ onToggleForm }) {
   );
 }
 
-export default Register; 
+export default Register;
