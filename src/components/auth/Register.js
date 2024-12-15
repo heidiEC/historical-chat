@@ -12,15 +12,7 @@ function Register({ onToggleForm }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-const authResponse = await fetch('/api/auth', { method: 'POST', body: JSON.stringify({ email, password }) });
-      if (authResponse.ok) {
-        // registration successful
-        const token = await authResponse.json();
-        dispatch(setToken(token));
-      } else if (authResponse.status === 302) {
-        // Handle the redirect response here
-        console.log('Redirecting to another URL');
-      }
+    await login(email, password);
     } catch (err) {
       setError(err.message);
     }
