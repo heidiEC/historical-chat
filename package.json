@@ -20,6 +20,9 @@
     "react-scripts": "^5.0.1",
     "sharp": "^0.33.5"
   },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
   "main": "server.js",
   "scripts": {
     "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
@@ -32,26 +35,5 @@
     "deploy": "gh-pages -d build",
     "process-images": "node scripts/process-images.js",
     "fix-images": "node scripts/fix-missing-images.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "concurrently": "^7.0.0",
-    "gh-pages": "^6.2.0"
-  },
-  "homepage": "https://heidiEC.github.io/historical-chat"
+  }
 }
