@@ -34,7 +34,7 @@ app.use(cors);
 // JSON parsing middleware
 app.use(express.json());
 
-const router = require('./routes');
+const router = require('./routes'); // Correct import path
 
 // Routes
 app.use('/api/auth', router.auth);
