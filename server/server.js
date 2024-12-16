@@ -2,7 +2,7 @@ const path = require('path');
 require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
-const cors = require('./server/middleware/cors'); // Updated import path
+const cors = require('./middleware/cors'); // Correct import path
 const jwt = require('jsonwebtoken');
 
 const app = express();
@@ -42,10 +42,10 @@ app.use('/api/chats', router.chats);
 app.use('/api/users', router.users);
 
 // Serve static files from the React app
-app.use(express.static(path.join(__dirname, 'client/build')));
+app.use(express.static(path.join(__dirname, '../client/build')));
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname + '/client/build/index.html'));
+  res.sendFile(path.join(__dirname + '/../client/build/index.html'));
 });
 
 const PORT = process.env.PORT || 5000;

@@ -2,7 +2,7 @@
 FROM node:16
 
 # Set the working directory to the root directory
-WORKDIR /server
+WORKDIR /project-root
 
 # Copy package.json and package-lock.json
 COPY package*.json ./
