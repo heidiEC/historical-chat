@@ -13,8 +13,11 @@ RUN npm install
 # Copy the rest of the application code
 COPY . .
 
+# Set the working directory to the server directory
+WORKDIR /server
+
 # Expose the port the app runs on
 EXPOSE 5000
 
 # Define the command to run the application
-CMD ["npm", "run", "start-backend"]
+CMD ["node", "server.js"]
