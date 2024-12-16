@@ -2,7 +2,7 @@ const path = require('path');
 require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
-const cors = require('./middleware/cors'); // Updated import
+const cors = require('./server/middleware/cors'); // Updated import path
 const jwt = require('jsonwebtoken');
 
 const app = express();
