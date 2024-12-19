@@ -21,7 +21,12 @@ mongoose.connect(process.env.MONGODB_URI)
 // JSON parsing middleware
 app.use(express.json());
 
-// Authentication middleware (after JSON parsing)
+const router = require('./routes'); // Import routes from index.js
+
+// Public routes
+app.use('/api/auth', router.auth);
+
+// Authentication middleware (apply to routes that need it)
 app.use((req, res, next) => {
   const token = req.header('x-auth-token');
   if (!token) {
@@ -37,10 +42,7 @@ app.use((req, res, next) => {
   }
 });
 
-const router = require('./routes'); // Import routes from index.js
-
-// Routes
-app.use('/api/auth', router.auth);
+// Protected routes
 app.use('/api/chats', router.chats);
 app.use('/api/users', router.users);
 
