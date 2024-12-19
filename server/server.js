@@ -7,12 +7,21 @@ const jwt = require('jsonwebtoken');
 
 const app = express();
 
+// CORS middleware
+app.use(cors);
+
+// Handle preflight requests
+app.options('*', cors);
+
 // Connect to MongoDB
 mongoose.connect(process.env.MONGODB_URI)
   .then(() => console.log('Connected to MongoDB'))
   .catch(err => console.error('MongoDB connection error:', err));
 
-// Authentication middleware (before CORS and JSON parsing)
+// JSON parsing middleware
+app.use(express.json());
+
+// Authentication middleware (after JSON parsing)
 app.use((req, res, next) => {
   const token = req.header('x-auth-token');
   if (!token) {
@@ -28,13 +37,7 @@ app.use((req, res, next) => {
   }
 });
 
-// CORS middleware
-app.use(cors);
-
-// JSON parsing middleware
-app.use(express.json());
-
-const router = require('./routes'); // Correct import path
+const router = require('./routes'); // Import routes from index.js
 
 // Routes
 app.use('/api/auth', router.auth);
