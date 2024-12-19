@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.9927f6b7.css",
-    "main.js": "/static/js/main.9343cd3f.js",
-    "static/media/hawking.jpg": "/static/media/hawking.b1e2689a4c3f4e0142ce.jpg",
-    "static/media/tesla.jpg": "/static/media/tesla.5b1777bfdc76632d38db.jpg",
-    "static/media/cortazar.jpg": "/static/media/cortazar.7bccc26c60b533a5497a.jpg",
-    "static/media/bolano.jpg": "/static/media/bolano.edd29f79c7dc1a44209f.jpg",
-    "static/media/diana.jpg": "/static/media/diana.ac8a6e42e7e566149002.jpg",
-    "static/media/sagan.jpg": "/static/media/sagan.69f3d887b41bff3e8b42.jpg",
-    "static/media/einstein.jpg": "/static/media/einstein.3fdd89dee35eb0bc3015.jpg",
-    "static/media/davinci.jpg": "/static/media/davinci.ac3df5168b67b28496cc.jpg",
-    "static/media/angelou.jpg": "/static/media/angelou.78e4d6b619a909ef23bd.jpg",
-    "static/media/krishnamurti.jpg": "/static/media/krishnamurti.4c80f9dd4d2bb9c23c3e.jpg",
-    "static/media/jobs.jpg": "/static/media/jobs.5e550d79903dc5156e3b.jpg",
-    "static/media/mlk.jpg": "/static/media/mlk.7fcfb57b796035a18236.jpg",
-    "static/media/franklin.jpg": "/static/media/franklin.2533f3c3ece8915aeb40.jpg",
-    "static/media/kahlo.jpg": "/static/media/kahlo.e4e7463352985b728736.jpg",
-    "static/media/marquez.jpg": "/static/media/marquez.5b3c802e782132bf0e73.jpg",
-    "static/media/curie.jpg": "/static/media/curie.83cf3abc209320697b2a.jpg",
-    "static/media/beauvoir.jpg": "/static/media/beauvoir.e61ec0786d4d9d134006.jpg",
-    "index.html": "/index.html",
-    "main.9927f6b7.css.map": "/static/css/main.9927f6b7.css.map",
-    "main.9343cd3f.js.map": "/static/js/main.9343cd3f.js.map"
+    "main.css": "/historical-chat/static/css/main.9927f6b7.css",
+    "main.js": "/historical-chat/static/js/main.ea468534.js",
+    "static/media/hawking.jpg": "/historical-chat/static/media/hawking.b1e2689a4c3f4e0142ce.jpg",
+    "static/media/tesla.jpg": "/historical-chat/static/media/tesla.5b1777bfdc76632d38db.jpg",
+    "static/media/cortazar.jpg": "/historical-chat/static/media/cortazar.7bccc26c60b533a5497a.jpg",
+    "static/media/bolano.jpg": "/historical-chat/static/media/bolano.edd29f79c7dc1a44209f.jpg",
+    "static/media/diana.jpg": "/historical-chat/static/media/diana.ac8a6e42e7e566149002.jpg",
+    "static/media/sagan.jpg": "/historical-chat/static/media/sagan.69f3d887b41bff3e8b42.jpg",
+    "static/media/einstein.jpg": "/historical-chat/static/media/einstein.3fdd89dee35eb0bc3015.jpg",
+    "static/media/davinci.jpg": "/historical-chat/static/media/davinci.ac3df5168b67b28496cc.jpg",
+    "static/media/angelou.jpg": "/historical-chat/static/media/angelou.78e4d6b619a909ef23bd.jpg",
+    "static/media/krishnamurti.jpg": "/historical-chat/static/media/krishnamurti.4c80f9dd4d2bb9c23c3e.jpg",
+    "static/media/jobs.jpg": "/historical-chat/static/media/jobs.5e550d79903dc5156e3b.jpg",
+    "static/media/mlk.jpg": "/historical-chat/static/media/mlk.7fcfb57b796035a18236.jpg",
+    "static/media/franklin.jpg": "/historical-chat/static/media/franklin.2533f3c3ece8915aeb40.jpg",
+    "static/media/kahlo.jpg": "/historical-chat/static/media/kahlo.e4e7463352985b728736.jpg",
+    "static/media/marquez.jpg": "/historical-chat/static/media/marquez.5b3c802e782132bf0e73.jpg",
+    "static/media/curie.jpg": "/historical-chat/static/media/curie.83cf3abc209320697b2a.jpg",
+    "static/media/beauvoir.jpg": "/historical-chat/static/media/beauvoir.e61ec0786d4d9d134006.jpg",
+    "index.html": "/historical-chat/index.html",
+    "main.9927f6b7.css.map": "/historical-chat/static/css/main.9927f6b7.css.map",
+    "main.ea468534.js.map": "/historical-chat/static/js/main.ea468534.js.map"
   },
   "entrypoints": [
     "static/css/main.9927f6b7.css",
-    "static/js/main.9343cd3f.js"
+    "static/js/main.ea468534.js"
   ]
 }
