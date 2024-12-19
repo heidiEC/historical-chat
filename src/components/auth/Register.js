@@ -12,7 +12,7 @@ function Register({ onToggleForm }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-    await login(email, password);
+    await register(username, email, password);
     } catch (err) {
       setError(err.message);
     }
